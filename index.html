@@ -80,6 +80,13 @@
     @media(max-width:480px) {
       .logo-wrap img { height:80px; }
       th, td { font-size:11px; padding:7px 5px; }
+      /* 영양성분: 글자·여백을 줄여 옆으로 끄는 거리 최소화 */
+      #nutrition .table-wrap { padding-right:0; }
+      #nutrition table { min-width:0; width:auto; table-layout:auto; }
+      #nutrition th, #nutrition td { width:auto !important; font-size:10px; padding:6px 3px; white-space:nowrap; }
+      #nutrition th, #nutrition td { min-width:36px; }
+      #nutrition th:nth-child(1), #nutrition td:nth-child(1) { min-width:0; }
+      #nutrition td:nth-child(2) { white-space:normal; min-width:96px; }
     }
   </style>
 </head>
